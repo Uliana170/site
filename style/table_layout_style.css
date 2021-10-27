@@ -1,0 +1,11 @@
+table {
+    background: rgb(175, 83, 228); /* Цвет фона таблицы */
+    color: rgb(14, 21, 29); /* Цвет текста */
+    border: 5px double rgb(20, 117, 0); /* Рамка вокруг таблицы */
+   }
+
+td {
+    background: rgb(107, 243, 202); /* Цвет фона ячеек */
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   }
+    
