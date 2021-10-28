@@ -1,0 +1,23 @@
+body{
+    background: rgb(96, 188, 241);
+    
+}
+
+aside{
+    background: rgb(203, 228, 114);
+    width:200px;
+    height: 300px;
+    margin-bottom: auto;
+    box-shadow: indigo;
+    
+   
+}
+h2{text-align: center;}
+p{text-align: center;}
+h3{text-align: right;}
+footer{text-align: center;
+color: deeppink;
+}
+
+
+ 
