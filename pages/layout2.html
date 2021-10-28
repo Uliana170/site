@@ -1,25 +1,124 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    
-    <title>CSS оформление</title>
+    <title>Блочная вёрстка</title>
+<link rel="stylesheet" href="../style/block_crafting.css">
+<style>
+    #zatemnenie {
+      background: rgba(0, 88, 27, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    #okno {
+      width: 600px;
+      height: 500px;
+      text-align: center;
+      padding: 15px;
+      border: 3px solid #22061d;
+      border-radius: 10px;
+      color: #500970;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: rgb(223, 120, 120);
+    }
+    #zatemnenie:target {display: block;}
+    .close {
+      display: inline-block;
+      border: 1px solid #010c3d;
+      color: #221269;
+      padding: 0 12px;
+      margin: 10px;
+      text-decoration: none;
+      background: #dddddd;
+      font-size: 14pt;
+      cursor:pointer;
+    }
+    .close:hover {background: #e6e6ff;}
+  </style>
 </head>
 <body>
-    <h1>CSS оформление </h1>
-    <ol>
-        <li>
-            <a href="../index.html">Главная страница </a>
-        </li>
-        <li>
-            <a href="layout.html">HTML верстка</a>
-        </li>
-        <li>
-            <a href="layout3.html">JS програмирование</a>
-        </li>
+    <header>
+        <h1> блочная верстка </h1>
+    </header>
+    <main>
+        <p><img src="../images/uta.layout2.jpeg" width="200px" height="200px"  ></p>
+        <h1><iframe width="560" height="315" src="https://www.youtube.com/embed/3oUj_EPYNw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h1>
+        <aside>
+            <p>блочная верстка очень сложная и интересная  , ставлю 9 баллов из 10 </p>
+        </aside>
+        <h2>ЮТА ТОП , КТО НЕ ВЕРИТ ТОМУ В ЛОБ</h2>
+        <h3><img src="../images/gavkoshmig.jpeg" width="100px" height="100px" alt=""></h3>
+        <p><img src="../images/childhood.jpeg"width="300" height="300"></p>
+        <p><img src="../images/monkey.gif"></p>
+        <h4><img src="../images/pictures.jpeg"></h4>
 
-    </ol>
-    
-    
+        <script>
+            var fs=1
+            var direction="right"
+            function rollertext(whichone){
+            var thetext=whichone
+            for (i=0;i<thetext.length;i++){
+            document.write(thetext.charAt(i).fontsize(fs))
+            
+            if (fs<7&&direction=="right")
+            fs++
+            else if (fs==7){
+            direction="left"
+            fs--
+            }
+            else if (fs==1){
+            direction="right"//osw
+            fs++
+            }
+            else if (fs>1&&direction=="left")
+            fs--
+            
+            }
+            }
+            
+            rollertext("ЭТО САМЫЙ ЛУЧШИЙ САЙТ В ВАШЕЙ ЖИЗНИ ")
+            </script>
+
+<div id="zatemnenie">
+    <div id="okno">
+      САНСАНЫЧ САМЫЙ ЛУЧШИЙ<br>
+      <a href="#" class="close">ЗАКРЫТЬ</a>
+      <a><img src="../images/sanich.jpeg" width="350px" height="350px"></a>
+    </div>
+  </div>
+   
+  <a href="#zatemnenie">СРОЧНО НАЖМИ</a>
+
+         <aside>
+             <p>навигация</p>
+             <li>
+                <a href="../index.html">Главная страница </a>
+                
+            </li>
+            <li>
+                <a href="layout2.html">CSS оформление</a>
+            </li>
+            <li>
+                <a href="layout3.html">JS програмирование</a>
+            </li>
+
+         </aside>
+         <aside>   
+             <img src="../images/eye.gif">
+         </aside>
+    </main>
+    <footer>
+
+      <img src="../images/frog.jpeg" width="500" height="200">
+      
+    </footer>
 </body>
 </html>
